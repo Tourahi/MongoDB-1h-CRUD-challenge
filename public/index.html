@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <style media="screen">
+      .box {
+        margin-left: 100px;
+        margin-top: 100px;
+      }
+      .container {
+        display: flex;
+        width: 100px;
+        align-items: center;
+        margin-left: 200px;
+      }
+      .item {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <form class="box" action="/books" method="post">
+      <label for="">Title</label>
+      <input class="item"  type="text" name="title">
+      <label for="">author</label>
+      <input class="item"  type="text" name="author">
+      <label for="">category</label>
+      <input class="item"  type="text" name="category">
+      <input class="item" type="submit" name="submit" value="Add">
+    </form>
+
+    <form class="box" action="/books/mod" method="post"> <!-- Should be PUT using AJAX or else-->
+
+      <label for="">Target Title</label>
+      <input class="item"  type="text" name="targetTitle">
+      <hr>
+      <label for="">Title</label>
+      <input class="item"  type="text" name="title">
+      <input class="item" type="submit" name="submit" value="Modifie">
+    </form>
+
+    <form class="box" action="/books/del" method="post"> <!-- Should be DELETE using AJAX or else-->
+      <label for="">Title</label>
+      <input class="item"  type="text" name="title">
+      <input class="item" type="submit" name="submit" value="Delete">
+    </form>
+  </div>
+  </body>
+</html>

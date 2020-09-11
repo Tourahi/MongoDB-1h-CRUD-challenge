@@ -1,0 +1,17 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is a tarining project ",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.4",
+    "nodemon": "^2.0.4"
+  }
+}
